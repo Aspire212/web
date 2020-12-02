@@ -11,7 +11,8 @@
   }
   
   .stars{
-    margin: 20px;
+    padding-top: 70px;
+    margin: 20px 20px 50px 20px;
   }
   
 .star{
@@ -32,14 +33,52 @@
 
 .stars .star:hover ~ .star {
   background: url(star0.png) center center no-repeat;
-}
 
+}
+.btnblock:before{
+  content: "";
+  display: block;
+  clear: both;
+}
+.btnblock{
+  position: absolute;
+  margin-bottom: 40px;
+}
+.btnadd{
+  float: left;
+  margin-right: 10px;
+}
+.btnadd,
+.btndel{
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px lightgray;
+  background: lightskyblue;
+}
+.btnadd:hover,
+.btndel:hover{
+  background: green;
+}
+.btnadd:active,
+.btndel:active{
+  border: 3px solid lightgray;
+  outline: none;
+}
+.btnadd:focus,
+.btndel:focus{
+  outline: none;
+}
 </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>star</title>
 </head>
+<div class="btnblock">
+<button class="btnadd"> add star </button>
+<button class="btndel">del star</button>
+</div>
 <div class="stars">
   <img src="star0.png"/>
   <img src="star1.png"/>
@@ -62,7 +101,23 @@
     
   </div>
 </div>
+<script>
+const stars = document.querySelector('.stars');
+const btnadd = document.querySelector('.btnadd');
+let div;
+const btndel = document.querySelector('.btndel')
+btnadd.addEventListener('click', function(){
+  div = document.createElement('div');
+    stars.appendChild(div);
+    div.classList.add('star');
+})
 
+btndel.onclick = function(){
+stars.lastElementChild.remove();
+}
+
+  
+</script>
 <body>
 
 </body>
