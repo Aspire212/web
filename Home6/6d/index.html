@@ -1,0 +1,70 @@
+<!DOCTYPE 0qhtml>
+<html>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  img{
+    height: 0;
+  }
+  
+  .stars{
+    margin: 20px;
+  }
+  
+.star{
+  background: blue;
+  width: 75px;
+  height: 75px;
+  margin-right: 20px;
+  float: left;
+}
+
+.stars .star {
+  background: url(star0.png) center center no-repeat;
+}
+
+.stars:hover .star {
+  background: url(star1.png) center center no-repeat;
+}
+
+.stars .star:hover ~ .star {
+  background: url(star0.png) center center no-repeat;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>star</title>
+</head>
+<div class="stars">
+  <img src="star0.png"/>
+  <img src="star1.png"/>
+  <div class="star">
+    
+  </div>
+  <div class="star">
+    
+  </div>
+  <div class="star">
+    
+  </div>
+  <div class="star">
+    
+  </div>
+  <div class="star">
+    
+  </div>
+  <div class="star">
+    
+  </div>
+</div>
+
+<body>
+
+</body>
+
+</html>
