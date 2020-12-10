@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stras</title>
+</head>
+<style>
+
+.star_yes{
+height: 0;
+width:  0;
+}
+.star_none{
+height: 0;
+width:  0;
+}
+.star{
+	float: left;
+	width: 78px;
+	height: 78px;
+	background: url(star0.png) center center no-repeat;
+	background-size: cover;
+	transition: background .2s linear;
+}
+.star:hover:nth-child(even){
+background: url(star1.png);
+transition: background .3s linear;
+}
+</style> 
+<body>
+	<div class="star">
+		<img src="star0.png" class="star_none" alt="">
+		<img src="star1.png" class="star_yes" alt="">
+	</div>
+	<div class="star"></div>
+	<div class="star"></div>
+	<div class="star"></div>
+	<div class="star"></div>
+	<div class="star"></div>
+	<div class="star"></div>
+</body>
+</html>
