@@ -1,55 +1,117 @@
 <!DOCTYPE HTML5>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
+    <title>HTML</title>
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+    <!-- HTML -->
+
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <style type="text/css" media="all">
-*{
-}
-</style>
-<body>
-  <form action="#" method="get" accept-charset="utf-8">
-    <p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
-   <div class="nameMenu">
-
-    <p>Название статьи</p>
+    .PC {
+        border-collapse: collapse;
+        box-sizing: border-box;
+        width: 100%;
+    }
     
-    <input type="text" id="paperName" />
-      
-    </div>
-    <div class="selectMenu">
-      
-    <label for="#select">Рубрика:</label>
-    <select id="#select">
-      <option value="1">компьютерная техника</option>
-      <option value="2">Графика и дизайн</option>
-      <option value="3" selected="scalected">Програмирование</option>
-    </select>
-   </div>
-<div class="radioMenu">
-  
+    .PC tr td:first-child {
+        width: 15%;
+    }
+    
+    textarea {
+        width: 100%;
+    }
+    
+    .Mobile div {
+        margin: 2px;
+    }
+    
+    .Mobile {
+        display: none;
+    }
+    
+    @media screen and (max-width: 750px) {
+        .PC {
+            display: none;
+        }
+        .Mobile {
+            display: block;
+        }
+    }
+</style>
 
-    <input type="radio" name="radioBt" value="site"/>На сайте
-    <input type="radio" name="radioBtn" value="journal"/>В журнале
-    <input type="radio" name="radioBtn" value="all"/>На сайте и в журнале
-   </div>
+<body>
+    <p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
+    <form action="#" method="GET">
+        <table class="PC">
+            <tr>
+                <td>
+                    <p>Название статьи:</p>
+                </td>
+                <td><input type="text" style="width: 100%;" /></td>
+            </tr>
 
-   Разрешить коментарии:<input type="checkbox" checked="checked" value="yes"/>
-   <label for="#text">Текст статьи:
-   <textarea  id="text" rows="4" cols="40"></textarea></label>
-   <button  type="submit">Отправить</button>
-  </form>
-  <!-- Project -->
-  <script src="main.js"></script>
+            <tr>
+                <td>Рубрика:</td>
+                <td><select id="#select">
+                  <option value="1">компьютерная техника</option>
+                  <option value="2">Графика и дизайн</option>
+                  <option value="3" selected="scalected">Програмирование</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td>Публикации</td>
+                <td> <input type="radio" name="radioBt" value="site" />На сайте
+                    <input type="radio" name="radioBtn" value="journal" />В журнале
+                    <input type="radio" name="radioBtn" value="all" />На сайте и в журнале</td>
+            </tr>
+
+            <tr>
+                <td>Разрешить коментарий</td>
+                <td><input type="checkbox" checked="checked" value="yes" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">Текст статьи:</td>
+            </tr>
+            <tr style="width: 100%;">
+                <td colspan="2"><textarea id="text" rows="4" cols="100"></textarea></td>
+
+            </tr>
+
+            <tr>
+                <td><button type="submit">Отправить</button></td>
+            </tr>
+
+        </table>
+        <div class="Mobile">
+            <div>Название статьи:</div>
+            <div><input type="text" style="width: 100%;" /></div>
+            <div>Рубрика:</div>
+            <div><select id="#select">
+              <option value="1">компьютерная техника</option>
+              <option value="2">Графика и дизайн</option>
+              <option value="3" selected="scalected">Програмирование</option>
+            </select></div>
+
+            <div>Публикации</div>
+            <div><input type="radio" name="radioBt" value="site" />На сайте</div>
+            <div><input type="radio" name="radioBtn" value="journal" />В журнале</div>
+            <div><input type="radio" name="radioBtn" value="all" />На сайте и в журнале</div>
+            <div>Текст статьи:</div>
+            <div><textarea id="text" rows="4" cols="100"></textarea></div>
+            <div><button type="submit">Отправить</button></div>
+        </div>
+    </form>
+    <!-- Project -->
+    <script src="main.js"></script>
 </body>
+
 </html>
