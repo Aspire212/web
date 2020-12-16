@@ -1,0 +1,55 @@
+<!DOCTYPE HTML5>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<style type="text/css" media="all">
+*{
+}
+</style>
+<body>
+  <form action="#" method="get" accept-charset="utf-8">
+    <p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
+   <div class="nameMenu">
+
+    <p>Название статьи</p>
+    
+    <input type="text" id="paperName" />
+      
+    </div>
+    <div class="selectMenu">
+      
+    <label for="#select">Рубрика:</label>
+    <select id="#select">
+      <option value="1">компьютерная техника</option>
+      <option value="2">Графика и дизайн</option>
+      <option value="3" selected="scalected">Програмирование</option>
+    </select>
+   </div>
+<div class="radioMenu">
+  
+
+    <input type="radio" name="radioBt" value="site"/>На сайте
+    <input type="radio" name="radioBtn" value="journal"/>В журнале
+    <input type="radio" name="radioBtn" value="all"/>На сайте и в журнале
+   </div>
+
+   Разрешить коментарии:<input type="checkbox" checked="checked" value="yes"/>
+   <label for="#text">Текст статьи:
+   <textarea  id="text" rows="4" cols="40"></textarea></label>
+   <button  type="submit">Отправить</button>
+  </form>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
