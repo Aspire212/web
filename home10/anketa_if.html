@@ -1,0 +1,35 @@
+<!DOCTYPE HTML5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var lastName = prompt('Ведите вашу фамилию: ');
+        var firstName = prompt('Ведите ваше имя: ');
+        var faseName = prompt('Ведите ваше отчество: ');
+        var gender = confirm('Вы мужчина?');
+        var age = prompt('Введите ваш возраст: ');
+        var old;
+        var yesNo;
+
+        while (isNaN(parseInt(age))) {
+            age = prompt('Введите коректный возраст: ');
+        }
+
+        if (gender) old = 60;
+        else old = 55;
+
+        if (age >= old) yesNo = 'да';
+        else yesNo = 'нет';
+
+
+        alert('Ваше ФИО: ' + lastName + ' ' + firstName + ' ' + faseName + '\n' + 'Ваш возраст в годах: ' + age + '\n' + 'Ваш возраст в днях: ' + age * 365 + '\n' + 'Через 5 лет вам будет: ' + age + 5 + '\n' + 'Вы на пенсии: ' + yesNo)
+    </script>
+</body>
+
+</html>
