@@ -1,119 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>football</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>9D</title>
 </head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box
-    }
-    
-    .content_info {
-        overflow: hidden;
-        border-top: none;
-        border-bottom: none;
-    }
-    
-    .wrapper {
-        width: 100%;
-    }
-    
-    .header,
-    .footer {
-        text-align: center;
-        background: lightblue;
-        padding: 10px;
-    }
-    
-    .ballwrap {
-        background: url(Ball.jpg) top right repeat-y;
-    }
-    
-    .wrapconten {
-        background: url(Fon.jpg) left repeat-y;
-        background-size: 200px;
-    }
-    
-    .link_shadow {
-        display: none;
-    }
-    
-    .content_link {
-        width: 200px;
-        float: left;
-        padding: 30px;
-        vertical-align: middle;
-        display: block;
-    }
-    
-    h3,
-    h4 {
-        text-align: center;
-        margin: 10px;
-    }
-    
-    .false {
-        clear: both;
-    }
-    
-    img {
-        float: left;
-        margin: 10px;
-    }
-    
-    .signIn {
-        width: 160px;
-        padding: 10px;
-        text-align: center;
-        background: rgba(0, 200, 10, .7);
-        position: fixed;
-        right: 10px;
-        top: 40px;
-    }
-    
-    @media screen and (max-width: 500px) {
-        .header,
-        .footer {
-            height: 0;
-            width: 0px;
-            padding: 0;
-            font-size: 0px;
-        }
-        .ballwrap {
-            background: repeat;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-            margin: -0 0 10px 0;
-        }
-        .content_info p {
-            padding: 50px;
-        }
-        .wrapconten {
-            background: lightblue;
-        }
-        .content_link {
-            clear: both;
-            width: 100vw;
-            display: none;
-        }
-        .link_shadow {
-            display: block;
-            text-align: center;
-            background: url(Fon.jpg) top repeat;
-            padding: 20px 0 50px 0;
-        }
-        .link_shadow h4 {
-            margin-top: 0;
-        }
-    }
-</style>
 
 <body>
     <div class="wrapper">
@@ -153,20 +46,6 @@
                     <div class="false">
                     </div>
                 </div>
-                <div class="link_shadow">
-                    <h4>Виды спорта:</h4>
-                    <ul>
-                        <li><a href="https://ru.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8C%D0%BA%D0%BE%D0%B1%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%BE%D1%80%D1%82">Конькобежный спорт</a></li>
-                        <li><a href="https://ru.m.wikipedia.org/wiki/%D0%91%D0%B8%D0%B0%D1%82%D0%BB%D0%BE%D0%BD">Биатлон</a></li>
-                        <li><a href="https://ru.m.wikipedia.org/wiki/%D0%A4%D1%83%D1%82%D0%B1%D0%BE%D0%BB">Футбол</a></li>
-                        <li><a href="https://ru.m.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D1%8C%D0%B1%D0%B0_%D0%B8%D0%B7_%D0%BB%D1%83%D0%BA%D0%B0_(%D0%B2%D0%B8%D0%B4_%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B0)">Стрельба из лука</a></li>
-                        <li><a href="https://ru.m.wikipedia.org/wiki/%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA_%D0%B2_%D0%B4%D0%BB%D0%B8%D0%BD%D1%83">Прыжки в длину</a></li>
-                        <li><a href="https://ru.m.wikipedia.org/wiki/%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA_%D0%B2_%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%83#:~:text=%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA%20%D0%B2%20%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%83%20%D1%81%20%D1%80%D0%B0%D0%B7%D0%B1%D0%B5%D0%B3%D0%B0,%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%BA%D1%83%20%D0%B8%20%D0%BF%D1%80%D0%B8%D0%B7%D0%B5%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.&text=%D0%AF%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%B4%D0%B8%D1%81%D1%86%D0%B8%D0%BF%D0%BB%D0%B8%D0%BD%D0%BE%D0%B9%20%D0%BB%D1%91%D0%B3%D0%BA%D0%BE%D0%B9%20%D0%B0%D1%82%D0%BB%D0%B5%D1%82%D0%B8%D0%BA%D0%B8,%D0%B4%D0%BB%D1%8F%20%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%20%D1%81%201928%20%D0%B3%D0%BE%D0%B4%D0%B0.">Прыжки в высоту</a></li>
-                        <li><a href="https://ru.m.wikipedia.org/wiki/%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA_%D0%B2_%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%83#:~:text=%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA%20%D0%B2%20%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%83%20%D1%81%20%D1%80%D0%B0%D0%B7%D0%B1%D0%B5%D0%B3%D0%B0,%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%BA%D1%83%20%D0%B8%20%D0%BF%D1%80%D0%B8%D0%B7%D0%B5%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.&text=%D0%AF%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%B4%D0%B8%D1%81%D1%86%D0%B8%D0%BF%D0%BB%D0%B8%D0%BD%D0%BE%D0%B9%20%D0%BB%D1%91%D0%B3%D0%BA%D0%BE%D0%B9%20%D0%B0%D1%82%D0%BB%D0%B5%D1%82%D0%B8%D0%BA%D0%B8,%D0%B4%D0%BB%D1%8F%20%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%20%D1%81%201928%20%D0%B3%D0%BE%D0%B4%D0%B0.">Прыжки в высоту</a></li>
-                        <li><a href="https://ru.m.wikipedia.org/wiki/%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA_%D0%B2_%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%83#:~:text=%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA%20%D0%B2%20%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%83%20%D1%81%20%D1%80%D0%B0%D0%B7%D0%B1%D0%B5%D0%B3%D0%B0,%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%BA%D1%83%20%D0%B8%20%D0%BF%D1%80%D0%B8%D0%B7%D0%B5%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.&text=%D0%AF%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%B4%D0%B8%D1%81%D1%86%D0%B8%D0%BF%D0%BB%D0%B8%D0%BD%D0%BE%D0%B9%20%D0%BB%D1%91%D0%B3%D0%BA%D0%BE%D0%B9%20%D0%B0%D1%82%D0%BB%D0%B5%D1%82%D0%B8%D0%BA%D0%B8,%D0%B4%D0%BB%D1%8F%20%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%20%D1%81%201928%20%D0%B3%D0%BE%D0%B4%D0%B0.">Прыжки в высоту</a></li>
-                        <li><a href="https://ru.m.wikipedia.org/wiki/%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA_%D0%B2_%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%83#:~:text=%D0%9F%D1%80%D1%8B%D0%B6%D0%BE%D0%BA%20%D0%B2%20%D0%B2%D1%8B%D1%81%D0%BE%D1%82%D1%83%20%D1%81%20%D1%80%D0%B0%D0%B7%D0%B1%D0%B5%D0%B3%D0%B0,%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D0%BF%D0%BB%D0%B0%D0%BD%D0%BA%D1%83%20%D0%B8%20%D0%BF%D1%80%D0%B8%D0%B7%D0%B5%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5.&text=%D0%AF%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%20%D0%B4%D0%B8%D1%81%D1%86%D0%B8%D0%BF%D0%BB%D0%B8%D0%BD%D0%BE%D0%B9%20%D0%BB%D1%91%D0%B3%D0%BA%D0%BE%D0%B9%20%D0%B0%D1%82%D0%BB%D0%B5%D1%82%D0%B8%D0%BA%D0%B8,%D0%B4%D0%BB%D1%8F%20%D0%B6%D0%B5%D0%BD%D1%89%D0%B8%D0%BD%20%D1%81%201928%20%D0%B3%D0%BE%D0%B4%D0%B0.">Прыжки в высоту</a></li>
-                    </ul>
-                </div>
             </div>
             <div class="footer">
                 <h2>ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</h2>
@@ -174,6 +53,5 @@
         </div>
     </div>
 </body>
-<!--k-->
 
 </html>
